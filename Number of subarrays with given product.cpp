@@ -3,13 +3,9 @@ using namespace std;
 
 int countOne(int arr[], int n){
 	int i = 0;
-
 	int len = 0;
-
-	int ans = 0;
-	
+	int ans = 0;	
 	while(i < n){
-
 		if(arr[i] == 1){
 			len = 0;
 			while(i < n && arr[i] == 1){
@@ -23,7 +19,6 @@ int countOne(int arr[], int n){
 	
 	return ans;
 }
-
 int findSubarrayCount(int arr[], int n, int k)
 {
 	int start = 0, endval = 0, p = 1,
@@ -39,9 +34,7 @@ int findSubarrayCount(int arr[], int n, int k)
 				p /= arr[start];
 				start++;
 			}
-		}
-		
-		
+		}	
 		if(p == k)
 		{
 			countOnes = 0;
@@ -61,7 +54,6 @@ int findSubarrayCount(int arr[], int n, int k)
 
 		endval++;
 	}
-	return res;
 }
 int main()
 {
@@ -77,8 +69,6 @@ int main()
 	int arr2[] = { 2, 1, 1, 1, 4, 5};
 	int n2 = sizeof(arr2) / sizeof(arr2[0]);
 	k = 4;
-	
-	if(k != 1)
 		cout << findSubarrayCount(arr2, n2, k) << "\n";
 	else
 		cout << countOne(arr2, n2) << "\n";
