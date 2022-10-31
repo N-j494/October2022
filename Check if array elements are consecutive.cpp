@@ -19,5 +19,9 @@ int main()
 {
 	int arr[]= {5, 4, 2, 3, 1, 6};
 	int n = sizeof(arr)/sizeof(arr[0]);
+	if(areConsecutive(arr, n) == true)
+		cout<<" Array elements are consecutive ";
+	else
+		cout<<" Array elements are not consecutive ";
 	return 0;
 }
