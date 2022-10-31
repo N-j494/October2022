@@ -12,6 +12,7 @@ bool isSubset(int arr1[], int arr2[], int m, int n)
 		if (j == m)
 			return 0;
 	}
+	return 1;
 }
 int main()
 {
@@ -29,4 +30,3 @@ int main()
 	getchar();
 	return 0;
 }
-
