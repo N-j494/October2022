@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void relativeComplement(int arr1[], int arr2[],
-							int n, int m) {
+void relativeComplement(int arr1[], int arr2[],int n, int m) {
 
 int i = 0, j = 0;
 while (i < n && j < m) {
@@ -28,7 +27,6 @@ int arr1[] = {3, 6, 10, 12, 15};
 int arr2[] = {1, 3, 5, 10, 16};
 int n = sizeof(arr1) / sizeof(arr1[0]);
 int m = sizeof(arr2) / sizeof(arr2[0]);
-relativeComplement(arr1, arr2, n, m);
 return 0;
 }
 
